@@ -21,9 +21,7 @@ var stackMethods = {
   pop: function(){
     var temp;
     if(this.count>0){
-      console.log(this.storage,this.count);
       temp=this.storage[this.count-1];
-      console.log(temp);
       delete this.storage[this.count-1];
       //shift first
       //delete last
@@ -33,6 +31,7 @@ var stackMethods = {
     return;
   }
 };
+
 
 
 

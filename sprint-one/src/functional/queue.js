@@ -22,8 +22,7 @@ var makeQueue = function(){
       storage[key]=storage[key+1];
       key++;
     }
-    console.log(storage);
-    count--
+    count--;
     return temp;
   }
     // if(count>0){

@@ -6,13 +6,14 @@ var makeStack = function(){
   var count=0;
   // Implement the methods below
   someInstance.push = function(value){
-    count++;
+    //count++;
     storage[count]=value;
+    count++;
   };
 
   someInstance.pop = function(){
     if(count>0){
-      var temp=storage[count];
+      var temp=storage[count-1];
       delete storage.count;
       count--;
       return temp;
@@ -27,3 +28,11 @@ var makeStack = function(){
 
   return someInstance;
 };
+  // var a=makeStack();
+  // a.push(1);
+
+ // var history = makeStack();
+//  history.push('currentPage');
+  //user goes to new page
+  //user clicks back
+ // back = history.pop()
