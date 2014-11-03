@@ -61,27 +61,3 @@ makeBinarySearchTree.methods={
  * Complexity: What is the time complexity of the above functions?
  */
 
-// this.storage.push({
-//       left : null,
-//       right: null,
-//       value: input
-//     });
-//     var that=this;
-//     var recurse=function (temp) {
-//       var lastEl=that.storage[that.storage.length-1];
-//       temp=temp || that.storage[0];
-//       console.log(temp);
-//       if(input<temp.value){
-//         if(temp.left===null){
-//           temp.left = lastEl;
-//           return "Done";
-//         } else {return recurse(temp.left);}
-//       }
-//       if(input>temp.value){
-//         if(temp.right === null){
-//           temp.right = lastEl;
-//           return "Done";
-//         } else {return recurse(temp.right);}
-//       }
-//     };
-//     return recurse();
