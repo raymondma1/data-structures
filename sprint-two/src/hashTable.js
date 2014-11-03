@@ -15,7 +15,6 @@ HashTable.prototype.retrieve = function(k){
   var hash = getIndexBelowMaxForKey(k, this._limit);
   // first check location of hash and see if there are multiple items in the location
   // if so loop through the array looking and matching the value at the position 0 of the sub arrays in the arary.
-  // return(this._storage.get(hash)[1]);
   console.log(this._storage.get(hash)[1]);
   if(this._storage.get(hash).length>0){
     for(var i = 0; i<this._storage.get(hash).length; i++){
@@ -41,25 +40,7 @@ HashTable.prototype.remove = function(k){
       }
     }
   }
-
-
-
-  //this._storage.set(hash,{});
-  // var hash = getIndexBelowMaxForKey(k, this._limit);
-  // var temp = this._storage.get(hash);
-  // if(this._storage.get(hash).length >1){
-  //   for(var i =0; i<this._storage.get(hash).length; i++){
-  //     if(this._storage.get(hash)[i][0]==k){
-  //       delete(this._storage.get(hash)[i]);
-  //     }
-  //   }
-  // }
-  };
-  // this._storage.each(function(val, i, storage) {
-  //  if(i===hash) {
-  //    storage.splice(i,1);
-  //  }
-  // });
+};
 
 
 
